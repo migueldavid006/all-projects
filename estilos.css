@@ -408,3 +408,49 @@ main article {
 	}
 }
 
+
+
+
+
+/* ANIMACION LOADER */
+
+.loader{
+	position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 5px solid #eee;
+	border-top: 5px solid #621132;
+	animation-name:girar;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	margin-top: -8px;
+}
+
+@keyframes girar 
+{
+	form{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.arrowAnimation{
+	animation: saltar 1s infinite;
+}
+
+@keyframes saltar{
+	form{
+		transform: translatey(0);
+	}
+	to{
+		transform: translateY(8px);
+	}
+}
